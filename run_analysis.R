@@ -25,3 +25,5 @@ source("descriptive_variable_names.R")
 # 5 From the data set in step 4, creates a second, independent tidy data set
 # with the average of each variable for each activity and each subject.
 source("activity_subject_mean.R")
+fwrite(mean_std_df_grouped_mean, file = "data/mean_std_df_grouped_mean.txt", 
+            row.name=FALSE)
