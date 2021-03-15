@@ -3,26 +3,33 @@ In the code book we will detail the process of obtaining data tidy
 
 ## 0 run_analysis.R
 The following libraries are imported.
+
+~~~
 library(plyr)
 library(dplyr)
 library(data.table)
+~~~
 
 Five scripts are called sequentially to answer the questions.
-
-1.- Merges the training and the test sets to create one data set.
+~~~
+# 1.- Merges the training and the test sets to create one data set.
 source("import_data.R")
 
-2 Extracts only the measurements on the mean and standard deviation for each measurement. 
+# 2 Extracts only the measurements on the mean and standard deviation for each measurement. 
 source("extract_mean_std.R")
 
-3 Uses descriptive activity names to name the activities in the data set
+# 3 Uses descriptive activity names to name the activities in the data set
 source("descriptive_activity_names.R")
 
-4 Appropriately labels the data set with descriptive variable names
+# 4 Appropriately labels the data set with descriptive variable names
 source("descriptive_variable_names.R")
 
-5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+# 5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 source("activity_subject_mean.R")
+# fwrite" function added to create txt file
+fwrite(mean_std_df_grouped_mean, file = "data/mean_std_df_grouped_mean.txt", 
+            row.name=FALSE)
+~~~
 
 ## 1 import_data.R
 **1 Merges the training and the test sets to create one data set.  
