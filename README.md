@@ -4,7 +4,7 @@ Tareas calificadas por los compañeros: Getting and Cleaning Data Course Project
 ## Getting Started
 Final evaluation of the Coursera course ["Getting and Cleaning Data Course Project"](https://www.coursera.org/learn/data-cleaning).
 
-The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set with R.
 
 ### Review criteria
 1) The submitted data set is tidy. 
@@ -67,7 +67,16 @@ The following files have been used:
 
 They have been downloaded to the folder "./data".
 
-## Prerequisites
+## Approach
+**Hadley Wickham's** approach was followed in his article **"Tidy Data"** in the Journal of Statistical Software (August 2014, Volume 59, Issue 10).
+>A dataset is messy or tidy depending on how rows, columns and tables are matched up with observations,variables and types. In tidy data:
+>1. Each variable forms a column.
+>2. Each observation forms a row.
+>3. Each type of observational unit forms a table.
+
+Regarding the wide or long format, the **wide format** has been chosen because it is more appropriate for the resolution of the problem posed.
+
+## R | Rstudio | OS used
 R | Rstudio
 platform       x86_64-pc-linux-gnu         
 arch           x86_64                      
@@ -84,7 +93,38 @@ language       R
 version.string R version 4.0.3 (2020-10-10)
 nickname       Bunny-Wunnies Freak Out  
 
-## Installing
+## Installing library
 * library(plyr)
 * library(dplyr)
 * library(data.table)
+
+## Scripts
+6 scripts have been created:
+
+0.- run_analysis.R imports the libraries and answers the 5 questions by calling 5 different scripts in which the five requested steps are executed.
+
+2.- Merges the training and the test sets to create one data set.
+import_data.R
+
+2 Extracts only the measurements on the mean and standard deviation for each measurement. 
+extract_mean_std.R
+
+3 Uses descriptive activity names to name the activities in the data set
+descriptive_activity_names.R
+
+4 Appropriately labels the data set with descriptive variable names
+descriptive_variable_names.R
+
+5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+activity_subject_mean.R
+
+
+## Code book
+Detailed information on the processes, variables and data frames that have been created or used can be found in the code book.
+
+
+## Acknowledgments
+[thoughtfulbloke aka David Hood](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/)
+[Hadley Wickham's article "Tidy Data" in the Journal of Statistical Software (August 2014, Volume 59, Issue 10)](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)
+[Markdown syntaxis](https://markdown.es/sintaxis-markdown/)
+
