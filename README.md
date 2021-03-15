@@ -85,6 +85,6 @@ version.string R version 4.0.3 (2020-10-10)
 nickname       Bunny-Wunnies Freak Out  
 
 ## Installing
-library(plyr)
-library(dplyr)
-library(data.table)
+* library(plyr)
+* library(dplyr)
+* library(data.table)
