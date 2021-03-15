@@ -124,7 +124,9 @@ Detailed information on the processes, variables and data frames that have been 
 
 
 ## Acknowledgments
-[thoughtfulbloke aka David Hood](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/)
-[Hadley Wickham's article "Tidy Data" in the Journal of Statistical Software (August 2014, Volume 59, Issue 10)](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)
+[thoughtfulbloke aka David Hood](https://thoughtfulbloke.wordpress.com/2015/09/09/getting-and-cleaning-the-assignment/)  
+
+[Hadley Wickham's article "Tidy Data" in the Journal of Statistical Software (August 2014, Volume 59, Issue 10)](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)  
+
 [Markdown syntaxis](https://markdown.es/sintaxis-markdown/)
 
