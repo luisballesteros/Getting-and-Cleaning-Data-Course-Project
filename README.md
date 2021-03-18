@@ -99,24 +99,25 @@ nickname       Bunny-Wunnies Freak Out
 * library(data.table)
 
 ## Scripts
-6 scripts have been created:
 
-0.- run_analysis.R imports the libraries and answers the 5 questions by calling 5 different scripts in which the five requested steps are executed.
+Following the indications given in David Hood's article, and in order to separate each of the steps of the exercise, a master script run_analysis.R has been created to call each of the scripts (steps of the exercise).
 
-2.- Merges the training and the test sets to create one data set.
-import_data.R
+0.- **run_analysis.R** imports the libraries and answers the 5 questions by calling 5 different scripts in which the five requested steps are executed.
 
-2 Extracts only the measurements on the mean and standard deviation for each measurement. 
-extract_mean_std.R
+2.- Merges the training and the test sets to create one data set.  
+**import_data.R**
 
-3 Uses descriptive activity names to name the activities in the data set
-descriptive_activity_names.R
+2 Extracts only the measurements on the mean and standard deviation for each measurement.  
+**extract_mean_std.R**
 
-4 Appropriately labels the data set with descriptive variable names
-descriptive_variable_names.R
+3 Uses descriptive activity names to name the activities in the data set  
+**descriptive_activity_names.R**
 
-5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-activity_subject_mean.R
+4 Appropriately labels the data set with descriptive variable names  
+**descriptive_variable_names.R**
+
+5 From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+**activity_subject_mean.R**
 
 
 ## Code book
